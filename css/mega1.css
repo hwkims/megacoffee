@@ -1,0 +1,238 @@
+/*웹폰트-티몬소리체*/
+@font-face {
+    font-family: 'TmonMonsori';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/TmonMonsori.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/*초기설정*/
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/*레이아웃*/
+#wrap_header {
+    width: 100%;
+    height: 100px;
+    background: #363636;
+
+    position: sticky;
+    top: 0;
+    z-index: 99999;
+}
+
+#header {
+    width: 1280px;
+    height: 100px;
+
+    margin: 0 auto;
+}
+
+#header div {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#header div.logo {
+    width: 380px;
+    height: 100px;
+    margin-left: 20px;
+}
+
+#header div.nav {
+    width: 620px;
+    height: 100px;
+
+}
+
+#header div.nav>ul>li {
+    display: inline-block;
+    vertical-align: middle;
+
+    padding-top: 60px;
+}
+
+#header div.nav>ul>li>a {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: -1px;
+
+    margin: 0 25px;
+}
+
+#header div.sns {
+    width: 180px;
+    height: 100px;
+    margin-left: 20px;
+}
+
+#header div.sns p.btn {
+    border: 1px solid #f4ce3f;
+    display: inline-block;
+    padding: 3px;
+    border-radius: 2px;
+
+    color: #f4ce3f;
+    font-size: 12px;
+    letter-spacing: -1px;
+
+    margin: 10px;
+    cursor: pointer;
+}
+
+/*메인배너*/
+#main {
+    width: 1280px;
+    height: 550px;
+    margin: 0 auto;
+}
+
+/*10종버튼*/
+#btn {
+    width: 1280px;
+    height: 510px;
+    margin: 0 auto;
+}
+
+#btn ul li {
+    width: calc(100%/5);
+    height: 255px;
+    background: pink;
+
+    float: left;
+
+    box-sizing: border-box;
+
+    cursor: pointer;
+
+    position: relative;
+    overflow: hidden;
+}
+
+#btn ul li img {
+    width: 100%;
+    height: 100%;
+}
+
+#btn ul li p.etc {
+    width: 100%;
+    height: 255px;
+    background: rgba(0, 0, 0, 0.6);
+
+    position: absolute;
+    left: 0;
+    top: -255px;
+
+    text-align: center;
+    line-height: 255px;
+
+    opacity: 0;
+}
+
+#btn ul li:hover p.etc {
+    top: 0;
+    opacity: 1;
+    transition: 1s;
+}
+
+#btn ul li p.etc span {
+    color: #fff;
+    font-size: 14px;
+    border: 1px solid #fff;
+    letter-spacing: -1px;
+
+    padding: 5px;
+    border-radius: 3px;
+}
+
+/*창업비용배너*/
+#banner {
+    width: 1280px;
+    height: 320px;
+    margin: 0 auto;
+
+    position: relative;
+}
+
+#banner p.won1,
+#banner p.won2 {
+    width: 250px;
+    height: 250px;
+    background: cyan;
+    border-radius: 50%;
+}
+
+#banner p.won1 {
+    position: absolute;
+    left: 150px;
+    top: 40px;
+    background: url(../images/won1.jpg);
+    background-position: center center;
+
+    filter: brightness(0.5);
+    -webkit-filter: brightness(0.5);
+}
+
+#banner p.won2 {
+    position: absolute;
+    left: 350px;
+    top: 40px;
+
+    background: url(../images/won2.jpg);
+    background-position: center center;
+
+    filter: brightness(1.2);
+    -webkit-filter: brightness(1.2);
+}
+
+#banner h4 {
+    position: absolute;
+    left: 730px;
+    top: 95px;
+
+    color: #372c26;
+    font-size: 40px;
+    letter-spacing: -3px;
+
+}
+
+#banner h2 {
+    position: absolute;
+    left: 680px;
+    top: 150px;
+
+    color: #ffd338;
+    font-size: 106px;
+    letter-spacing: -3px;
+    font-family: 'TmonMonsori';
+
+}
+
+#banner h2 span {
+    font-size: 50px;
+    letter-spacing: 1px;
+}
+
+#banner p.logo1 {
+    position: absolute;
+    left: 930px;
+    top: 160px;
+}
+
+#banner p.logo2 {
+    position: absolute;
+    right: 150px;
+    top: 160px;
+}

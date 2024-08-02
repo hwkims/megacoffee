@@ -1,0 +1,105 @@
+/*메뉴 영역*/
+#title {
+    width: 1280px;
+    height: 100px;
+    background: url(../images/brand_title_bg.jpg);
+    margin: 0 auto;
+}
+
+
+/*메뉴 소개*/
+#menu_main {
+    width: 1280px;
+    margin: 0 auto 70px;
+    text-align: center;
+}
+
+#menu_main h2 {
+    padding-top: 90px;
+
+    color: #5d3b1f;
+    font-size: 34px;
+    letter-spacing: -3px;
+    text-transform: uppercase;
+}
+
+#menu_main p.line {
+    width: 1050px;
+    height: 1px;
+    background: #ccc;
+    margin: 30px auto;
+}
+
+#menu_main p.best {
+    background: #f47bcb;
+    width: 65px; height: 30px;
+    line-height: 30px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    margin-left: 140px;
+
+    color:#fff; font-size: 22px;
+     letter-spacing: -2px;
+}
+
+#menu_main ul {
+    width: 1000px; height: 1450px;
+    border: 1px solid #edd9a6;
+    margin: 30px auto;
+
+}
+#menu_main ul li {
+    width: 200px; height: 250px;
+    border: 1px solid #edd9a6;
+    box-sizing: border-box;
+    float: left;
+    border-right: 0;
+    border-bottom: 0;
+    cursor: pointer;
+}
+
+#menu_main ul li:nth-child(1) {
+    width: 1000px;
+    height: 1200px;
+    border-left: 0;
+    padding-top: 30px;
+    box-sizing: border-box;
+    border-top: 0;
+    animation-name: fade;
+    animation-duration: 2s;
+
+}
+#menu_main ul li:nth-child(1) img {
+    width: 800px;
+    
+}
+
+@keyframes fade {
+    0% { opacity: 0;}
+    100% { opacity: 1;}
+}
+
+
+#menu_main ul li:nth-child(2) {
+    border-left: 0;
+}
+
+#menu_main ul li.btn img {
+    width: 150px; height: 210px;
+    padding-top: 20px;
+
+}
+
+
+
+#down_bg1 {
+    width: 100%;
+    height: 60px;
+    background: #3c2418;
+}
+
+#down_bg2 {
+    width: 100%;
+    height: 60px;
+    background: #ffd437;
+}

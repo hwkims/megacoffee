@@ -1,0 +1,257 @@
+/*웹폰트-티몬소리체*/
+@font-face {
+    font-family: 'TmonMonsori';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/TmonMonsori.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/*초기설정*/
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/*레이아웃*/
+#wrap_header {
+    width: 100%;
+    height: 100px;
+    background: #363636;
+
+    position: sticky;
+    top: 0;
+    z-index: 99999;
+}
+
+#header {
+    width: 1280px;
+    height: 100px;
+
+    margin: 0 auto;
+}
+#header span {
+    display: none;
+}
+
+#header div {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#header div.logo {
+    width: 380px;
+    height: 100px;
+    margin-left: 20px;
+}
+
+#header div.nav {
+   
+    width: 620px;
+    height: 100px;
+
+}
+
+#header div.nav>ul>li {
+    display: inline-block;
+    vertical-align: middle;
+
+    padding-top: 60px;
+    padding-bottom: 20px;
+
+    position: relative;
+}
+
+#header div.nav>ul>li>ul.sub {
+    position: absolute;
+    left: 10px;
+    top: 100px;
+
+    display: none;
+}
+
+#header div.nav>ul>li:hover>ul.sub {
+    display: block;
+}
+
+#header div.nav>ul>li>ul.sub>li>a {
+    display: block;
+
+    width: 110px;
+    height: 40px;
+    line-height: 40px;
+    box-sizing: border-box;
+
+    padding-left: 20px;
+    background: #363636;
+
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: -1px;
+}
+
+#header div.nav>ul>li>ul.sub>li>a:hover {
+    background: #ffd338;
+    color: #363636;
+}
+
+#header div.nav>ul>li>a {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: -1px;
+
+    margin: 0 25px;
+}
+
+#header div.nav>ul>li>a:hover {
+    color: #fed337;
+}
+
+#header div.sns {
+    width: 180px;
+    height: 100px;
+    margin-left: 20px;
+}
+
+#header div.sns p.btn a {
+    border: 1px solid #f4ce3f;
+    display: inline-block;
+    padding: 3px;
+    border-radius: 2px;
+
+    color: #f4ce3f;
+    font-size: 12px;
+    letter-spacing: -1px;
+
+    margin: 10px;
+    cursor: pointer;
+}
+
+/*--------태블릿버전--------*/
+@media all and (max-width:1024px) {
+    
+    #header {
+        
+        width: 100%;
+        display: flex;
+    }
+
+    #header span {
+        display: none;
+    }
+    #header div.logo {
+        width: 30%;
+
+        display: flex;
+        align-items: center;
+    }
+    #header div.logo img {
+        width: 100%;
+    }
+
+    #header div.nav {
+       
+        width: 50%;
+    }
+
+    #header div.nav>ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #header div.nav>ul>li {
+        width: calc(100%/3);
+        background: #363636;
+        padding: 0;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        
+        border: 1px solid #f4ce3f;
+        box-sizing: border-box;
+    }
+
+    #header div.nav>ul>li:nth-child(1) {
+        width: 70%;
+    }
+    #header div.nav>ul>li:nth-child(2) {
+        width: 30%;
+    }
+    #header div.nav>ul>li > a {
+        margin: 0;
+    }
+    #header div.nav>ul>li > ul.sub > li > a {
+        display: none;
+    }
+
+    #header div.sns {
+        width: 20%;
+        /* border: 1px solid blue; */
+    }
+
+    #header div.sns p.btn a {
+        font-size: 11px;
+    }
+
+}
+
+
+/*--------모바일버전--------*/
+@media all and (max-width:768px){
+    #wrap_header {
+        height: auto;
+    }
+    #header {
+        flex-direction: column;
+        height: auto;
+
+        position: relative;
+    }
+    #header span {
+        display: block;
+        position: absolute;
+        right: 30px;
+        top:30px;
+
+        color:#fff; font-size: 24px;
+        cursor: pointer;
+    }
+
+    #header div.logo {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    #header div.nav {
+        width: 100%;
+        display: none;
+    }
+    #header div.nav.show {
+        display: block;
+    }
+    #header div.nav>ul>li {
+        width: 100%;
+        background: gray;
+        border: 0;
+    }
+    #header div.nav>ul>li:nth-child(1){
+        width: 100%;
+    }
+    #header div.nav>ul>li:nth-child(2){
+        width: 100%;
+    }
+
+    #header div.sns {
+        display: none;
+    }
+
+}
